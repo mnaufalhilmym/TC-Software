@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transporter</title>
+</head>
+
+<body>
+	<!-- Tombol buka popup (untuk debugging) -->
+	<!-- <button id="myBtn">Open Modal</button> -->
+	<!-- The Modal countdown 3-2-1 -->
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content"> <span class="close"></span>
+			<h1 id="matchCountdown">10</h1>
+		</div>
+	</div>
+	<div class="title">
+		<h1>Transporter</h1>
+	</div>
+	<input type="text" class="nama-tim">
+	<section class="countdown">
+		<div class="wrapper">
+			<div class="timer-name">Team Preparation</div>
+			<div class="display-frame">
+				<div class="display-start"></div>
+				<h1 id="timesUp">TIME'S UP!</h1>
+				<h1 id="displayMin">01</h1>
+				<h1 id="separatorColon">:</h1>
+				<h1 id="displaySec">00</h1>
+				<h1 id="separatorDot">.</h1>
+				<h1 id="displayMiliSec">00</h1>
+				<div class="display-end"></div>
+			</div>
+			<div class="cd-buttons">
+				<button onclick="start()">Start</button>
+				<button onclick="stop()">Stop</button>
+				<button onclick="cancel()">Reset</button>
+			</div>
+		</div>
+	</section>
+	<div class="counter">
+		<div class="wrapper" id="counter1">
+			<h1>Green Dropzone</h1>
+			<div id="count" class="count">0</div>
+			<div class="ct-buttons">
+				<button id="minus" class="ct-btn sml btn1">-</button>
+				<button id="reset" class="ct-btn reset btn1">Reset</button>
+				<button id="plus" class="ct-btn sml btn1">+</button>
+			</div>
+		</div>
+		<div class="wrapper" id="counter2">
+			<h1>Blue Dropzone</h1>
+			<div id="count2" class="count">0</div>
+			<div class="ct-buttons">
+				<button id="minus2" class="ct-btn sml btn2">-</button>
+				<button id="reset2" class="ct-btn reset btn2">Reset</button>
+				<button id="plus2" class="ct-btn sml btn2">+</button>
+			</div>
+		</div>
+		<div class="wrapper" id="counter3">
+			<h1>Penalty</h1>
+			<div id="count3" class="count">0</div>
+			<div class="ct-buttons">
+				<button id="minus3" class="ct-btn sml btn3">-</button>
+				<button id="reset3" class="ct-btn reset btn3">Reset</button>
+				<button id="plus3" class="ct-btn sml btn3">+</button>
+			</div>
+		</div>
+	</div>
+	<script src="./js/counter.js"></script>
+	<script src="./js/countdown.js"></script>
+</body>
+
+</html>

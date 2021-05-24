@@ -137,7 +137,7 @@ function setDisplayColor(color) {
 function enableTimer(state1, state2) {
 	document.getElementById("timesUp").style.display = state1;
 	if (state1 == "block") {
-		beep(100, 820, 700);
+		beep(100, 820, 1000);
 	}
 	document.getElementById("displayMin").style.display = state2;
 	document.getElementById("separatorColon").style.display = state2;

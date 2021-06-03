@@ -1,13 +1,13 @@
 let timer;
 let minute = 1;
 let seconds = 59;
-let milliseconds = minute * 60 * 100;
-// let milliseconds = 1200; // for debugging
+// let milliseconds = minute * 60 * 100;
+let milliseconds = 1200; // for debugging
 let textSec = "00";
 let textMil = "00";
 setDisplay(minute, textSec, textMil);
-let statSec = 59;
-// let statSec = 11; // for debugging
+// let statSec = 59;
+let statSec = 11; // for debugging
 let statMil = 100;
 let timer123 = true;
 let startable = true;
@@ -95,12 +95,11 @@ function cancel() {
 		clearInterval(timer);
 		setDisplay(minute, textSec, textMil);
 		enableTimer("none", "block");
-		count = 0;
-		document.getElementById('count').innerHTML = count;
-		count2 = 0;
-		document.getElementById('count2').innerHTML = count;
-		count3 = 0;
-		document.getElementById('count3').innerHTML = count;
+		
+		document.getElementById('count').innerHTML = 0;
+		document.getElementById('count2').innerHTML = 0;
+		document.getElementById('count3').innerHTML = 0;
+		document.getElementById("matchCountdown").innerHTML = 10;
 	}
 }
 

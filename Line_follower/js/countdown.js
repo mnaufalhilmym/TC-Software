@@ -81,6 +81,7 @@ function setTimer(timer, minute, second, millisecond) {
     if (timer == 1) {
         document.getElementById('minute1').innerText = textMinute;
         document.getElementById('second1').innerText = textSecond;
+        document.getElementById('millisecond1').innerText = textMillisecond;
     } else {
         document.getElementById('minute2').innerText = textMinute;
         document.getElementById('second2').innerText = textSecond;

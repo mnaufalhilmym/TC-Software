@@ -40,7 +40,7 @@ function timer1() {
     }
 
     setTimer(1, minute1, second1, millisecond1);
-    if (minute1 == 3 && second1 == 0 && autoTimer2) {
+    if (minute1 == 3 && second1 == 0 && millisecond1 == 0 && autoTimer2) {
         startable2 = false;
     }
 }

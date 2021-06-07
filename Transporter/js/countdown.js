@@ -96,9 +96,12 @@ function cancel() {
 		setDisplay(minute, textSec, textMil);
 		enableTimer("none", "block");
 		
-		document.getElementById('count').innerHTML = 0;
-		document.getElementById('count2').innerHTML = 0;
-		document.getElementById('count3').innerHTML = 0;
+		count = 0;
+		document.getElementById('count').innerHTML = count;
+		count2 = 0;
+		document.getElementById('count2').innerHTML = count2;
+		count3 = 0;
+		document.getElementById('count3').innerHTML = count3;
 		document.getElementById("matchCountdown").innerHTML = 10;
 	}
 }

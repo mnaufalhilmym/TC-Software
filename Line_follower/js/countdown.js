@@ -92,7 +92,7 @@ function setTimer(timer, minute, second, millisecond) {
 }
 
 function start1() {
-    if (startable1 && minute1 >= 0 && second1 >= 0 && millisecond1 > 0 ) {
+    if (startable1 && !(minute1 == 0 && second1 == 0 && millisecond1 == 0)) {
         startable1 = false;
         if (minute1 <= 2) {
             start2()
@@ -101,7 +101,7 @@ function start1() {
 }
 
 function start2() {
-    if (startable2) {
+    if (startable2 && !(minute2 == 3 && second2 == 0)) {
         startable2 = false;
         autoTimer2 = false;
     }
